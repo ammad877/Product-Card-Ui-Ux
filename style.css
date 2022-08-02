@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #131313;
+    color: #1b1a1a;
+}
+
+.container{
+    position: relative;
+}
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 500px;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.content-1,
+.img-content,
+.content-2{
+    position: relative;
+}
+
+.logo-img,
+.content-1-descreption,
+.content-2-descreption{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+}
+
+.logo-img img{
+    width: 60px;
+    height: 30px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.content-1-descreption h5{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.content-1-descreption h2{
+    width: 70%;
+    font-size: 25px;
+    margin: 5px auto 15px;
+}
+
+.card .img-content{
+    position: relative;
+    margin: 0 10px;
+}
+
+.circle-effect{
+    position: absolute;
+    left: 20%;
+    top: 5%;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom right,
+    #edef4d,
+    #edef4d,
+    #99d39d,
+    #55bbd9);
+    margin: auto;
+}
+
+.card .img-content img{
+    margin-top: -45px;
+    width: 250px;
+    height: 250px;
+    transform: rotate(-30deg);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.card .img-content img:hover{
+    /* width: 300px; */
+    /* height: 300px; */
+    right: -30px;
+    transition: 0.4s ease-in;
+    transform: rotate(0deg);
+}
+
+.price h1{
+    font-size: 24px;
+    text-decoration: underline;
+    margin-top: -30px;
+    margin-bottom: 10px;
+}
+
+.price p{
+    font-size: 12px;
+    width: 80%;
+    margin: 5px auto;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.color h3{
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+.color span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 5px 5px;
+    cursor: pointer;
+}
+
+.color span:nth-child(2){
+    background: #1b1a1a;
+}
+
+.color span:nth-child(3){
+    background: #132bb8;
+}
+
+.color span:nth-child(4){
+    background: #bf1021;
+}
